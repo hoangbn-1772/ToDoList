@@ -2179,12 +2179,12 @@ SQL;
 		$expected = " WHERE DATEDIFF(NOW(),`Article`.`published`) < 1 && `Article`.`live`=1";
 		$this->assertEquals($expected, $result);
 
-		$result = $this->Dbo->conditions('file = "index.html"');
-		$expected = ' WHERE file = "index.html"';
+		$result = $this->Dbo->conditions('file = "index01.php"');
+		$expected = ' WHERE file = "index01.php"';
 		$this->assertEquals($expected, $result);
 
-		$result = $this->Dbo->conditions("file = 'index.html'");
-		$expected = " WHERE file = 'index.html'";
+		$result = $this->Dbo->conditions("file = 'index01.php'");
+		$expected = " WHERE file = 'index01.php'";
 		$this->assertEquals($expected, $result);
 
 		$letter = $letter = 'd.a';
