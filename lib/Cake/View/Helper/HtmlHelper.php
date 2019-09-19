@@ -171,7 +171,7 @@ class HtmlHelper extends AppHelper {
 	}
 
 /**
- * Adds a link to the breadcrumbs array.
+ * Inserts a link to the breadcrumbs array.
  *
  * ### Options
  *

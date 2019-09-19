@@ -763,7 +763,7 @@ class View extends CakeObject {
 	}
 
 /**
- * Adds a script block or other element to be inserted in $scripts_for_layout in
+ * Inserts a script block or other element to be inserted in $scripts_for_layout in
  * the `<head />` of a document layout
  *
  * @param string $name Either the key name for the script, or the script content. Name can be used to

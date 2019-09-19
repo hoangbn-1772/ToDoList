@@ -302,7 +302,7 @@ class Inflector {
 	}
 
 /**
- * Adds custom inflection $rules, of either 'plural', 'singular' or 'transliteration' $type.
+ * Inserts custom inflection $rules, of either 'plural', 'singular' or 'transliteration' $type.
  *
  * ### Usage:
  *

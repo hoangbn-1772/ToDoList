@@ -79,7 +79,7 @@ class CakeEventManager {
 	}
 
 /**
- * Adds a new listener to an event. Listeners
+ * Inserts a new listener to an event. Listeners
  *
  * @param callback|CakeEventListener $callable PHP valid callback type or instance of CakeEventListener to be called
  * when the event named with $eventKey is triggered. If a CakeEventListener instance is passed, then the `implementedEvents`

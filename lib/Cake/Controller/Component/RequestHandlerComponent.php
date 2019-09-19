@@ -424,7 +424,7 @@ class RequestHandlerComponent extends Component {
 	}
 
 /**
- * Adds/sets the Content-type(s) for the given name. This method allows
+ * Inserts/sets the Content-type(s) for the given name. This method allows
  * content-types to be mapped to friendly aliases (or extensions), which allows
  * RequestHandler to automatically respond to requests of that type in the
  * startup method.

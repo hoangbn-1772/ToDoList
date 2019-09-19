@@ -91,7 +91,7 @@ class TextHelper extends AppHelper {
 	}
 
 /**
- * Adds links (<a href=....) to a given text, by finding text that begins with
+ * Inserts links (<a href=....) to a given text, by finding text that begins with
  * strings like http:// and ftp://.
  *
  * ### Options
@@ -173,7 +173,7 @@ class TextHelper extends AppHelper {
 	}
 
 /**
- * Adds email links (<a href="mailto:....) to a given text.
+ * Inserts email links (<a href="mailto:....) to a given text.
  *
  * ### Options
  *
