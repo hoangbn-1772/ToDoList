@@ -306,7 +306,7 @@ abstract class ObjectCollection {
 	}
 
 /**
- * Adds or overwrites an instantiated object to the collection
+ * Inserts or overwrites an instantiated object to the collection
  *
  * @param string $name Name of the object
  * @param CakeObject $object The object to use

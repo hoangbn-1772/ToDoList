@@ -6,14 +6,11 @@ class Work extends AppModel
 
 	// use the Model::validate
 	public $validate = array(
-		'work' => array(
-			'rule'=>'notBlank',
-			'alphaNumeric',
-			'required' => true,
-			'message' => 'Letters and numbers only'), //letters and numbers
-		'date' => array(
-			'rule' => 'date',
-			'message' => 'Enter a valid date',
-			'required' => true) //date
+		'work_content' => array(
+			'rule' => 'notBlank',
+			'message' => 'Not blank'), //letters and numbers
+		'start_date' => array(
+			'rule' => 'notBlank',
+			'message' => 'Enter a valid date',), //date
 	);
 }

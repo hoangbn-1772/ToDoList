@@ -394,7 +394,7 @@ class Helper extends CakeObject {
 	}
 
 /**
- * Adds a timestamp to a file based resource based on the value of `Asset.timestamp` in
+ * Inserts a timestamp to a file based resource based on the value of `Asset.timestamp` in
  * Configure. If Asset.timestamp is true and debug > 0, or Asset.timestamp === 'force'
  * a timestamp will be added.
  *
@@ -814,7 +814,7 @@ class Helper extends CakeObject {
 	}
 
 /**
- * Adds the given class to the element options
+ * Inserts the given class to the element options
  *
  * @param array $options Array options/attributes to add a class to
  * @param string $class The class name being added.

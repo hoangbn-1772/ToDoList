@@ -529,7 +529,7 @@ class ModelValidator implements ArrayAccess, IteratorAggregate, Countable {
 	}
 
 /**
- * Adds a new rule to a field's rule set. If second argument is an array or instance of
+ * Inserts a new rule to a field's rule set. If second argument is an array or instance of
  * CakeValidationSet then rules list for the field will be replaced with second argument and
  * third argument will be ignored.
  *
