@@ -24,6 +24,7 @@
 			<th scope="col" style="width: 20%">Start date</th>
 			<th scope="col" style="width: 20%">Due date</th>
 			<th scope="col" style="width: 5%">Status</th>
+			<th scope="col" style="width: 5%">Action</th>
 		</tr>
 		</thead>
 		<tbody>
@@ -37,11 +38,14 @@
 				echo "<td><a href='edit/" . $item['Work']['id'] . "' >" . $item['Work']['work_content'] . "</a></td>";
 				echo "<td>" . $item['Work']['start_date'] . "</td>";
 				echo "<td>" . $item['Work']['due_date'] . "</td>";
+
 				if ($item['Work']['status'] == 0) {
 					echo '<td class="text-center"><input type="checkbox"></td>';
 				} else {
-					echo '<td class="text-center"><input type="checkbox" checked></td>';
+					echo '<td class="text-center"><input type="checkbox" checked disabled></td>';
 				}
+
+				echo "<td><a href='delete/" . $item['Work']['id'] . "' >Delete</a></td>";
 				echo "</tr>";
 			}
 		}

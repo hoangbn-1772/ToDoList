@@ -13,20 +13,13 @@
 <body>
 
 <div class="container">
-	<h2 style="text-align: center">Update Work</h2>
+	<h2 style="text-align: center">Delete Work</h2>
 	<?php
-	echo $this->Form->create('post');
-	echo $this->Form->input('work_content', array('label' => 'Work content', 'value' => $data['Work']['work_content']));
-
-	$option = array('0' => 'Not done', '1' => 'Done');
-	if ($data['Work']['status'] == 0) {
-		$attributes = array('value' => '0', 'separator' => '<br/>');
-	} else {
-		$attributes = array('value' => '1');
-	}
-	echo $this->Form->radio('status', $option, $attributes);
-	//	array('label' => 'Status', 'value' => $data['Work']['status'])
-	echo $this->Form->end('Update');
+	echo $this->Form->postLink(
+		'Delete',
+		array('action' => 'delete'),
+		array('confirm' => 'Are you sure?')
+	);
 	?>
 
 </div>
